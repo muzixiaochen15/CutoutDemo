@@ -1,0 +1,6 @@
+framework module Pods_YueWei {
+  umbrella header "Pods-YueWei-umbrella.h"
+
+  export *
+  module * { export * }
+}
