@@ -59,47 +59,12 @@
             make.centerY.mas_equalTo(bottomView);
             make.size.mas_offset(CGSizeMake(width, height));
         }];
-    //    button1.center = self.view.center;
         [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         button.layer.masksToBounds = YES;
         button.layer.cornerRadius = width/2.0;
         button.layer.borderWidth = 5;
         button.layer.borderColor = [UIColor whiteColor].CGColor;
     }
-//
-//    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeSystem];
-//    [button1 setTitle:@"生成" forState:UIControlStateNormal];
-//    [button1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [button1.layer setBackgroundColor:[CommUtils changeToColorWithHexAndRgbString:kMainColorStr].CGColor];
-//    [bottomView addSubview:button1];
-//    [button1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.mas_offset(edge);
-//        make.top.mas_offset(edge);
-//        make.size.mas_offset(CGSizeMake(width, height));
-//    }];
-////    button1.center = self.view.center;
-//    [button1 addTarget:self action:@selector(button1Clicked:) forControlEvents:UIControlEventTouchUpInside];
-//    button1.layer.masksToBounds = YES;
-//    button1.layer.cornerRadius = width/2.0;
-//    button1.layer.borderWidth = 5;
-//    button1.layer.borderColor = [UIColor whiteColor].CGColor;
-//
-//    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeSystem];
-//    [button2 setTitle:@"编辑" forState:UIControlStateNormal];
-//    [button2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [button2.layer setBackgroundColor:[CommUtils changeToColorWithHexAndRgbString:kMainColorStr].CGColor];
-//    [bottomView addSubview:button2];
-//    [button2 mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.mas_offset(edge * 2 + width);
-//        make.top.mas_offset(edge);
-//        make.size.mas_offset(CGSizeMake(width, height));
-//    }];
-////    button2.center = self.view.center;
-//    [button2 addTarget:self action:@selector(button2Clicked:) forControlEvents:UIControlEventTouchUpInside];
-//    button2.layer.masksToBounds = YES;
-//    button2.layer.cornerRadius = width/2.0;
-//    button2.layer.borderWidth = 5;
-//    button2.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 - (void)button1Clicked:(UIButton *)button{
